@@ -39,10 +39,10 @@ body {
 
 .nome {
     padding: 15px 0;
-    max-width: 100%;
     display: block;
     color: #fff;
     font-size: 30px;    
+    font-family: 'Oswald', sans-serif;
 }
 
 .nome span {
@@ -59,10 +59,11 @@ nav a {
     color: rgb(255, 255, 255);
     font-size: 20px;
     transition: ease-in-out 0.3s;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav a:hover {
- color: rgb(147, 9, 228);
+    color: rgb(147, 9, 228);
 }
 
 ul {
@@ -77,21 +78,21 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 110px;
+    height: 90vh;
 }
 
 .texto-home {
     display: flex;
     flex-direction: column;
+    font-family: 'Oswald', sans-serif;
 }
 
 .texto-home h1 {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 40px;
 }
 
 .texto-home h2 {
-    font-family: 'Oswald', sans-serif;
     color: #fff;
     margin: 10px 0;
 }
@@ -146,7 +147,7 @@ ul {
 
 .arrows {
     width: 60px;
-    height: 172px;
+    height: 100px;
 }
 
 .arrows path {
@@ -194,7 +195,7 @@ ul {
 .titulo-profile {
     text-align: center;
     font-size: 40px;
-    padding-top: 60px;
+    padding-top: 80px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
 }
@@ -245,19 +246,19 @@ ul {
 
 .profile-sinopse p {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: justify;
 }
 
-.project {
+.titulo-project {
     text-align: center;
     font-size: 40px;
-    padding-top: 60px;
+    padding-top: 80px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
 }
 
-.projetos-itens {
+.project-itens {
     display: grid;
     row-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -395,7 +396,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     .container {
-        margin-top: 15px;
+        margin-top: 50px;
     }
 
     nav {
@@ -482,11 +483,11 @@ footer {
         text-align: center;
     }
 
-    .project {
+    .titulo-project {
         padding-top: 20px;
     }
 
-    .projetos-itens {
+    .project-itens {
         grid-template-columns: none;
         justify-content: center;
         align-items: center;
@@ -495,6 +496,10 @@ footer {
 
     .text-project {
         text-align: center;
+    }
+
+    .project-links {
+        opacity: 1;
     }
 }
 
@@ -505,7 +510,7 @@ footer {
     }
 
     .container {
-        margin-top: 50px;
+        margin-top: 40px;
     }  
     
     .profile-card {
